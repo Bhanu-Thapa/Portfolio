@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+nav {
+  width: 300px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+nav a {
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+
+a:active,
+a:visited,
+a:focus {
+  color: black;
+}
+
+main {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+
+img {
+  position: absolute;
+}
+
+section {
+  position: relative;
+  height: 300px;
+}
