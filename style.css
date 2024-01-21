@@ -4,16 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  /* background-color: red; */
 }
 
 nav {
   width: 300px;
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,16 +28,18 @@ nav {
 }
 
 nav a {
-  background-color: aqua;
-  padding: 10px;
+  background-color: #00a584;
+  padding: 10px 14px;
   border-radius: 18px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
+a:link,
 a:active,
 a:visited,
 a:focus {
-  color: black;
+  color: white;
 }
 
 main {
@@ -55,16 +59,29 @@ main img {
   position: relative;
   /* height: 300px; */
   background-color: #003329;
-  padding: 40px 0;
+  padding: 16px 0;
   overflow: hidden;
 }
 
 h2 {
   color: white;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
   text-align: center;
+  height: 80px;
+
+  animation-name: breathing;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes breathing {
+  to {
+    font-size: 80px;
+  }
 }
 
 /* //////////// PROJECT IMAGE ////////// */
@@ -73,7 +90,7 @@ h2 {
   position: relative;
   width: 1300px;
   height: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 
@@ -87,29 +104,27 @@ h2 {
 .project-cart img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 /* product details */
 
 .product-details {
   position: absolute;
-  bottom: 20%;
-  left: 5%;
-  font-size: 36px;
-  color: yellow;
+  top: 15%;
+  left: 35%;
 }
 
 .product-details a {
   font-size: 26px;
-  background-color: white;
+  background-color: #009476;
+  color: white;
   text-decoration: none;
   padding: 8px 12px;
 }
 
 .product-details a:link,
 .product-details a:visited {
-  color: black;
+  color: white;
 }
 
 /*///////// THUMNAIL //////////*/
@@ -141,14 +156,11 @@ h2 {
 }
 
 .arrow {
-  width: 110px;
-  position: absolute;
-  bottom: 10%;
-  left: 25%;
   color: white;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .arrow p {
@@ -169,7 +181,6 @@ h2 {
   z-index: 1;
 }
 
-.project-img .project-list .project-cart .product-details h3,
 .project-img .project-list .project-cart .product-details a {
   animation-name: showcontent;
   animation-duration: 1s;
@@ -178,12 +189,8 @@ h2 {
   opacity: 0;
 }
 
-.project-img .project-list .project-cart .product-details h3 {
-  animation-delay: 0.5s !important;
-}
-
 .project-img .project-list .project-cart .product-details a {
-  animation-delay: 1s !important;
+  animation-delay: 0.5s !important;
 }
 
 @keyframes showcontent {
@@ -231,12 +238,49 @@ h2 {
   }
 }
 .project-img.next .project-thumnail .pro-thum-card:nth-child(1) {
-  /* overflow: hidden; */
   animation: fsThumbnail 0.5s linear forwards;
 }
 
 @keyframes fsThumbnail {
   from {
     opacity: 0;
+  }
+}
+
+/* TEXT EFFECT */
+
+.text {
+  margin-top: 20px;
+  position: relative;
+}
+
+.text span {
+  color: white;
+}
+
+.texteffect {
+  position: relative;
+  color: blue;
+}
+
+.texteffect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #003329;
+  border-left: 1px solid white;
+
+  animation: texteffect 4s steps(16) infinite alternate;
+}
+
+@keyframes texteffect {
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
   }
 }

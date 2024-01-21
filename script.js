@@ -44,3 +44,24 @@ rightArrow.addEventListener('click', () => {
     projectImg.classList.add('next');
   }
 });
+
+// TEXT EFFECT
+
+let texteffect = document.querySelector('.texteffect');
+
+function textAnimation() {
+  setTimeout(() => {
+    texteffect.textContent = 'SOFTWARE DEVELOPER';
+  }, 0);
+
+  setTimeout(() => {
+    texteffect.textContent = 'CONTENT CREATOR';
+  }, 4000);
+
+  setTimeout(() => {
+    texteffect.textContent = 'ARTIST';
+  }, 8000);
+}
+textAnimation();
+
+setInterval(textAnimation, 12000);
