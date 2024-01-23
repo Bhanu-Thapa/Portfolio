@@ -19,7 +19,8 @@ header {
 }
 
 nav {
-  width: 300px;
+  width: 310px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +38,12 @@ nav a {
   border-radius: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  background-color: #007c63;
+  font-size: 18px;
 }
 
 a:link,
@@ -301,7 +308,7 @@ span.texteffect {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-color: #003329;
 }
 
@@ -327,6 +334,30 @@ span.texteffect {
   padding: 10px;
   width: 450px;
   border-radius: 10px;
+  position: relative;
+}
+
+.namefield p,
+.emailfield p {
+  color: rgb(167, 167, 167);
+  position: absolute;
+  top: 22%;
+  font-size: 23px;
+  background-color: #003329;
+  transition: all 0.5s;
+}
+
+.namefield input:valid + .namef,
+.namefield input:focus + .namef,
+.emailfield input:valid + .emailf,
+.emailfield input:focus + .emailf {
+  top: -24%;
+  font-size: 18px;
+  color: rgb(196, 196, 196);
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 input {
@@ -352,9 +383,50 @@ textarea {
 }
 
 .sub-btn button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
   font-size: 22px;
-  padding: 10px;
+  font-weight: 600;
+  padding: 8px;
   border-radius: 10px;
   border: 2px solid white;
   outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.sub-btn button:hover {
+  background-color: #00a584;
+  color: white;
+}
+
+button i {
+  font-size: 30px;
+}
+
+.custom-shape-divider-bottom-1706049329 {
+  background-color: #003329;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1706049329 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1706049329 .shape-fill {
+  fill: white;
+}
+
+footer {
+  height: 200px;
+  /* background-color: red; */
+  border: 1px solid rebeccapurple;
 }

@@ -66,3 +66,45 @@ function textAnimation() {
 textAnimation();
 
 setInterval(textAnimation, 10000);
+
+// CONTACT EFFECT
+
+// let namefield = document.querySelector('.namefield');
+// let emailfield = document.querySelector('.emailfield');
+// let namef = namefield.querySelector('.namef');
+// let emailf = emailfield.querySelector('.emailf');
+
+// namefield.addEventListener('click', fieldeEffect);
+// emailfield.addEventListener('click', efieldeEffect);
+
+// function fieldeEffect() {
+//   namef.style.top = '-24%';
+//   namef.style.fontSize = '18px';
+//   namef.style.color = 'rgb(196, 196, 196)';
+//   namef.style.borderLeft = '1px solid white';
+//   namef.style.borderRight = '1px solid white';
+//   namef.style.paddingRight = '4px';
+//   namef.style.paddingLeft = '4px';
+// }
+
+// function efieldeEffect() {
+//   emailf.style.top = '-24%';
+//   emailf.style.fontSize = '18px';
+//   emailf.style.color = 'rgb(196, 196, 196)';
+//   emailf.style.borderLeft = '1px solid white';
+//   emailf.style.borderRight = '1px solid white';
+//   emailf.style.paddingRight = '4px';
+//   emailf.style.paddingLeft = '4px';
+// }
+
+// let idname = document.querySelector('#idname');
+// let idemail = document.querySelector('#email');
+
+// window.addEventListener('click', () => {
+//   if (idname.value != '') {
+//     namef.style.fontSize = '18px';
+//   } else {
+//     namef.style.top = '22%';
+//     namef.style.fontSize = '23px';
+//   }
+// });
