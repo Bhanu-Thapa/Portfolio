@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 header {
   position: relative;
   height: 100vh;
@@ -43,7 +47,7 @@ a:focus {
 }
 
 main {
-  background-color: blue;
+  /* background-color: blue; */
   position: absolute;
   top: 0;
   height: 100vh;
@@ -69,7 +73,7 @@ h2 {
   font-size: 70px;
   font-weight: 700;
   text-align: center;
-  height: 80px;
+  height: 95px;
 
   animation-name: breathing;
   animation-duration: 2s;
@@ -250,17 +254,23 @@ h2 {
 /* TEXT EFFECT */
 
 .text {
-  margin-top: 20px;
-  position: relative;
+  position: absolute;
+  width: 450px;
+  top: 12%;
+  margin-left: 160px;
 }
 
 .text span {
-  color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: 550;
 }
 
-.texteffect {
+span.texteffect {
   position: relative;
-  color: blue;
+  color: #009476;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .texteffect::before {
@@ -270,10 +280,9 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #003329;
-  border-left: 1px solid white;
-
-  animation: texteffect 4s steps(16) infinite alternate;
+  background-color: #fff;
+  border-left: 3px solid #003329;
+  animation: texteffect 5s steps(20) infinite alternate;
 }
 
 @keyframes texteffect {
@@ -283,4 +292,69 @@ h2 {
   100% {
     left: 0;
   }
+}
+
+/* CONTACT SECTION */
+
+.contact-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-color: #003329;
+}
+
+.contact-sec h3 {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 8px;
+  color: white;
+}
+
+.contact-box {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.namefield,
+.emailfield,
+.areafield {
+  border: 2px solid white;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 450px;
+  border-radius: 10px;
+}
+
+input {
+  height: 40px;
+  font-size: 22px;
+  width: 100%;
+  color: white;
+  background-color: #003329;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sub-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-btn button {
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  outline: none;
 }

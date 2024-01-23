@@ -3,21 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prof</title>
 
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600;700;800&family=Road+Rage&display=swap"
+      rel="stylesheet"
+    />
     <!-- style sheet -->
     <link rel="stylesheet" href="./style.css" />
+
+    <title>Prof</title>
   </head>
   <body>
     <header>
       <nav>
         <a href="">Home</a>
         <a href="#project">Project</a>
-        <a href="">contact</a>
+        <a href="#contact">contact</a>
       </nav>
 
       <main>
         <img src="./image/hill1.png" alt="hill1" class="hill1" />
+        <div class="text">
+          <span>HI, I'M BHANU&nbsp</span>
+          <br />
+          <span class="texteffect">SOFTWARE DEVELOPER</span>
+        </div>
         <img src="./image/hill2.png" alt="hill2" class="hill2" />
         <img src="./image/hill3.png" alt="hill3" class="hill3" />
         <img src="./image/hill4.png" alt="hill4" class="hill4" />
@@ -115,10 +128,30 @@
       <div class="arrow">
         <p class="arrow-right">></p>
       </div>
+    </section>
 
-      <div class="text">
-        <span>I'm &nbsp</span>
-        <span class="texteffect">SOFTWARE DEVELOPER</span>
+    <section class="contact-sec" id="contact">
+      <h3>CONTACT</h3>
+      <div class="contact-box">
+        <form action="#">
+          <div class="namefield">
+            <input type="text" placeholder="NAME" required />
+          </div>
+          <div class="emailfield">
+            <input type="email" placeholder="EMAIL" required />
+          </div>
+          <textarea
+            class="areafield"
+            name="msg"
+            cols="30"
+            rows="8"
+            placeholder="message"
+            required
+          ></textarea>
+          <div class="sub-btn">
+            <button>SUBMIT</button>
+          </div>
+        </form>
       </div>
     </section>
 

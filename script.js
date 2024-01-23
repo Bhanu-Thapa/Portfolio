@@ -3,11 +3,16 @@ let hill1 = document.querySelector('.hill1');
 let hill4 = document.querySelector('.hill4');
 let hill5 = document.querySelector('.hill5');
 
+// text parallax
+
+let text = document.querySelector('.text');
+
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
   console.log(value);
   leaf.style.left = `${value * 1.5}px`;
   leaf.style.top = `-${value * 1.5}px`;
+  text.style.top = `${value * 1 + 82}px`;
   hill1.style.top = `${value * 1.5}px`;
   hill4.style.left = `${-value * 1.5}px`;
   hill5.style.left = `${value * 1.5}px`;
@@ -56,12 +61,8 @@ function textAnimation() {
 
   setTimeout(() => {
     texteffect.textContent = 'CONTENT CREATOR';
-  }, 4000);
-
-  setTimeout(() => {
-    texteffect.textContent = 'ARTIST';
-  }, 8000);
+  }, 5000);
 }
 textAnimation();
 
-setInterval(textAnimation, 12000);
+setInterval(textAnimation, 10000);
