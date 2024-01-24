@@ -426,7 +426,47 @@ button i {
 }
 
 footer {
+  position: relative;
+  background-color: white;
   height: 200px;
-  /* background-color: red; */
-  border: 1px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social {
+  font-size: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social i {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.social i:hover {
+  color: #007c63;
+}
+
+.links {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links > a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+.links a:hover {
+  color: #007c63;
 }

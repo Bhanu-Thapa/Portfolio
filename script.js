@@ -67,6 +67,18 @@ textAnimation();
 
 setInterval(textAnimation, 10000);
 
+// team and blog
+
+let team = document.querySelector('.team');
+let blog = document.querySelector('.blog');
+
+team.addEventListener('click', progress);
+blog.addEventListener('click', progress);
+
+function progress() {
+  alert('Site is under Progress 🛠');
+}
+
 // CONTACT EFFECT
 
 // let namefield = document.querySelector('.namefield');
