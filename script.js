@@ -9,7 +9,6 @@ let text = document.querySelector('.text');
 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
-  console.log(value);
   leaf.style.left = `${value * 1.5}px`;
   leaf.style.top = `-${value * 1.5}px`;
   text.style.top = `${value * 1 + 82}px`;
@@ -67,7 +66,7 @@ textAnimation();
 
 setInterval(textAnimation, 10000);
 
-// team and blog
+// ALERT team and blog
 
 let team = document.querySelector('.team');
 let blog = document.querySelector('.blog');
@@ -78,6 +77,19 @@ blog.addEventListener('click', progress);
 function progress() {
   alert('Site is under Progress 🛠');
 }
+
+// SCROLL BAR
+
+let progressbar = document.querySelector('.probar');
+
+let dochigh = document.documentElement.scrollHeight;
+let viewport = document.documentElement.clientHeight;
+window.addEventListener('scroll', () => {
+  scroy = scrollY;
+  let per = (scroy / (dochigh - viewport)) * 100;
+  progressbar.style.width = `${per}%`;
+  progressbar.style.backgroundColor = '#00daae';
+});
 
 // CONTACT EFFECT
 

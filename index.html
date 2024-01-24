@@ -25,6 +25,14 @@
     <title>Prof</title>
   </head>
   <body>
+    <!-- <div class="scrollbar">
+      <div class="proscroll"></div>
+    </div> -->
+
+    <div class="bar">
+      <div class="probar"></div>
+    </div>
+
     <header>
       <nav>
         <a href="./index.html">Home</a>
@@ -141,13 +149,13 @@
     <section class="contact-sec" id="contact">
       <h3>CONTACT</h3>
       <div class="contact-box">
-        <form action="#">
+        <form name="contact" methods="POST" data-netlify="true">
           <div class="namefield">
-            <input type="text" required id="idname" />
+            <input type="text" required id="idname" name="UserName" />
             <p class="namef">NAME</p>
           </div>
           <div class="emailfield">
-            <input type="email" required id="idemail" />
+            <input type="email" required id="idemail" name="UserEmail" />
             <p class="emailf">EMAIL</p>
           </div>
           <textarea
@@ -156,10 +164,11 @@
             cols="30"
             rows="8"
             placeholder="message"
+            name="message"
             required
           ></textarea>
           <div class="sub-btn">
-            <button>
+            <button type="submit">
               <i class="fa-brands fa-telegram"></i>
               <p>SEND</p>
             </button>
