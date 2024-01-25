@@ -23,17 +23,21 @@ header {
   margin-top: -5px;
 }
 
+.navi {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
 nav {
   width: 310px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
-  position: absolute;
   z-index: 1;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 nav a {
@@ -74,6 +78,10 @@ main img {
   background-color: #003329;
   padding: 16px 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -492,4 +500,144 @@ footer {
 }
 .probar {
   height: 5px;
+}
+
+/* MEDIA QUERY  */
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: 300px;
+    height: 50px;
+    top: 2%;
+    left: 43%;
+  }
+
+  nav a {
+    padding: 6px 10px;
+  }
+
+  .text {
+    margin-left: 35px;
+    top: 28%;
+  }
+
+  .text span {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  span.texteffect {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .leaf {
+    left: -360px;
+    height: 60%;
+    top: 0;
+  }
+
+  .hill1 {
+    height: 45%;
+    top: 260px;
+  }
+  .hill2 {
+    height: 40%;
+    top: 350px;
+  }
+  .hill3 {
+    height: 40%;
+    top: 350px;
+  }
+  .hill4 {
+    height: 40%;
+    top: 350px;
+  }
+  .hill5 {
+    height: 40%;
+    top: 350px;
+    left: -110px;
+  }
+
+  .plant {
+    height: 40%;
+    top: 350px;
+  }
+  .tree {
+    height: 40%;
+    top: 350px;
+  }
+
+  header {
+    height: 645px;
+  }
+
+  /* project section */
+
+  h2 {
+    height: 60px;
+    font-size: 30px;
+  }
+
+  @keyframes breathing {
+    to {
+      font-size: 50px;
+    }
+  }
+
+  .project-img {
+    width: 440px;
+    height: 600px;
+  }
+
+  .product-details {
+    left: 40%;
+  }
+
+  .product-details a {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .project-thumnail {
+    width: 430px;
+  }
+
+  .pro-thum-card {
+    width: 70px;
+    height: 160px;
+  }
+
+  /* contact sec */
+
+  .contact-sec h3 {
+    font-size: 48px;
+  }
+
+  .namefield,
+  .emailfield,
+  .areafield {
+    width: 360px;
+    padding: 6px;
+  }
+
+  .contact-sec {
+    padding: 0;
+    gap: 6px;
+  }
+
+  .namefield p,
+  .emailfield p {
+    top: 16%;
+  }
+
+  /* footer */
+  footer {
+    height: 150px;
+    gap: 15px;
+  }
+
+  .links {
+    width: 280px;
+  }
 }

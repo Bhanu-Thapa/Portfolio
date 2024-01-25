@@ -91,6 +91,25 @@ window.addEventListener('scroll', () => {
   progressbar.style.backgroundColor = '#00daae';
 });
 
+// MEDIA QUERY JS
+
+let mediaQuery = window.matchMedia('(max-width:780px)');
+
+if (mediaQuery.matches) {
+  window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+    leaf.style.left = `${value * 1.5 - 360}px`;
+    leaf.style.top = `-${value * 1.5}px`;
+    text.style.top = `${value * 1 + 224}px`;
+    hill1.style.top = `${value * 1.5 + 260}px`;
+    hill4.style.left = `${-value * 1.5}px`;
+    hill5.style.left = `${value * 1.5 - 110}px`;
+  });
+}
+
+// function checkMediaQuery() {
+
+// }
 // CONTACT EFFECT
 
 // let namefield = document.querySelector('.namefield');
