@@ -78,12 +78,6 @@ function progress() {
   alert('Site is under Progress 🛠');
 }
 
-function lk() {
-  alert(
-    "My Account is closed by linkedin, Verification going on, i'll get back soon🙌"
-  );
-}
-
 // SCROLL BAR
 
 let progressbar = document.querySelector('.probar');
