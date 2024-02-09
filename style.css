@@ -156,7 +156,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
+  width: 900px;
   position: absolute;
   top: 58%;
   right: 1%;
@@ -235,7 +235,8 @@ h2 {
   width: 120px;
   height: 180px;
   top: 58%;
-  left: 37.5%;
+  /* left: 37.5%; */
+  left: 30%;
   animation: showImage 0.5s linear 1 forwards;
 }
 
