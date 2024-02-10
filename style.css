@@ -616,7 +616,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   nav {
-    width: 300px;
+    width: 346px;
     height: 50px;
     top: 2%;
     left: 43%;
@@ -624,6 +624,7 @@ footer {
 
   nav a {
     padding: 6px 10px;
+    font-size: 15px;
   }
 
   .text {
@@ -711,11 +712,14 @@ footer {
 
   .project-thumnail {
     width: 430px;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
   }
 
   .pro-thum-card {
-    width: 70px;
-    height: 160px;
+    width: 85px;
+    height: 120px;
   }
 
   /* ABOUT */
@@ -726,27 +730,35 @@ footer {
 
   .front h3 {
     font-size: 30px;
-    padding: 65px 60px;
+    padding: 130px 58px;
   }
 
   .back .back-outline {
     flex-direction: column-reverse;
+    justify-content: space-between;
   }
 
   .back .about-details {
     width: 250px;
-    height: 300px;
+    height: 161px;
     transform: translateZ(100px);
     color: white;
   }
 
+  .about-details p::first-line {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
   .about-details p {
     font-size: 12px;
+    text-align: justify;
   }
 
   .back .image {
     width: 150px;
     height: 150px;
+    margin-bottom: 14px;
   }
 
   /* contact sec */
@@ -763,7 +775,7 @@ footer {
   }
 
   .contact-sec {
-    padding: 0;
+    padding-top: 34px;
     gap: 6px;
   }
 
