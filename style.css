@@ -718,6 +718,37 @@ footer {
     height: 160px;
   }
 
+  /* ABOUT */
+
+  .about-card {
+    width: 350px;
+  }
+
+  .front h3 {
+    font-size: 30px;
+    padding: 65px 60px;
+  }
+
+  .back .back-outline {
+    flex-direction: column-reverse;
+  }
+
+  .back .about-details {
+    width: 250px;
+    height: 300px;
+    transform: translateZ(100px);
+    color: white;
+  }
+
+  .about-details p {
+    font-size: 12px;
+  }
+
+  .back .image {
+    width: 150px;
+    height: 150px;
+  }
+
   /* contact sec */
 
   .contact-sec h3 {
